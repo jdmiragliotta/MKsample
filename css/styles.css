@@ -277,6 +277,10 @@ ul.main-nav{
     background-image: url("../images/handbag-header-md.png");
     background-position-x: 85%;
   }
+
+  .container{
+    width:80%;
+  }
 }
 
 @media screen and (min-width: 769px){
