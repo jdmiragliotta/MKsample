@@ -47,6 +47,12 @@ ul.main-nav{
   display: inline-block;
 }
 
+.button-collapse{
+
+    color: #000;
+    padding-left: 15px;
+}
+
 .header-img{
   height: 450px;
 }
@@ -86,8 +92,6 @@ ul.main-nav{
 .img-container{
   position: relative;
 }
-
-
 
 .product-name{
   color: #fff;
@@ -278,5 +282,27 @@ ul.main-nav{
 
 
 .side-nav{
-  margin-top: 50px;
+  margin-top: 32px;
 }
+
+@media (max-width: 380px) {
+  .header-img{
+    height: 200px;
+    margin-top: 50px;
+  }
+  .watch-header{
+    background-image: url("../images/watch-header-sm.png");
+  }
+}
+
+@media (min-width: 380px and max-width:768px){
+  .header-img{
+    height: 300px;
+    margin-top: 50px;
+  }
+  .watch-header{
+    background-image: url("../images/watch-header-md.png");
+  }
+}
+
+
