@@ -1,0 +1,283 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+#logo-header{
+  width: 100%;
+  height: 32px;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  z-index: 1998;
+  width: 100%;
+}
+
+a.logo{
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+}
+
+nav{
+  background-color: #fff;
+  margin-top: 32px;
+}
+
+nav li a{
+  color: #000;
+}
+
+nav li a:hover{
+  background-color: #fff;
+}
+
+.nav-wrapper{
+  text-align: center;
+  width: 100%;
+}
+
+ul.main-nav{
+  text-align:center;
+  position: relative;
+  display: inline-block;
+}
+
+.header-img{
+  height: 450px;
+}
+
+
+.handbag-header{
+  margin-top: 50px;
+  background-image: url("../images/handbag-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.watch-header{
+  background-image: url("../images/watch-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.handbag-btn, .watch-btn{
+    position: relative;
+    top: 10%;
+    left: -6px;
+    width: 25%;
+    background-color: #000;
+}
+
+.handbag-btn:hover, .watch-btn:hover{
+  background-color: #000;
+}
+
+
+.img-click img{
+  width: 90%;
+  margin-left: 5%;
+}
+
+.img-container{
+  position: relative;
+}
+
+
+
+.product-name{
+  color: #fff;
+  position: absolute;
+  background: #000;
+  top: 10px;
+  left: -5px;
+  padding: 5px 15px;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2),0 2px 10px 0 rgba(0,0,0,0.2);
+  visibility: hidden;
+}
+
+.product-detail{
+  font-size: 11px;
+  color: #fff;
+  position: absolute;
+  background: #000;
+  bottom: 10px;
+  right: 8px;
+  padding: 5px 15px;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2),0 2px 10px 0 rgba(0,0,0,0.2);
+  visibility: hidden;
+}
+
+.product-info{
+  text-decoration: none;
+  text-align: center;
+  font-size: 11px;
+  color: #000;
+}
+
+.price{
+  display: block;
+}
+
+.product-container:hover{
+  animation-name: thumbZoom;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  transition-timing-function: ease-in;
+
+  -webkit-animation-name: thumbZoom;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-transition-timing-function: ease-in;
+
+}
+
+@keyframes thumbZoom{
+  0%{
+    transform: perspective(400px)translateY(0px) scale(1);
+  }
+
+  100%{
+    transform: perspective(400px)translateY(-20px) scale(1.1);
+  }
+}
+
+@-webkit-keyframes thumbZoom{
+   0%{
+    -webkit-transform: perspective(400px)translateY(0px) scale(1);
+  }
+
+  100%{
+    -webkit-transform: perspective(400px)translateY(-20px) scale(1.1);
+  }
+}
+
+.product-container:hover .product-name{
+  animation-name: nameSlide;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  transition-timing-function: ease-in;
+
+  -webkit-animation-name: nameSlide;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-transition-timing-function: ease-in;
+}
+
+@keyframes nameSlide{
+  0%{
+    opacity:0;
+    transform: translateX(-1.5em);
+  }
+
+  100%{
+    opacity:1;
+    transform: translateX(.7em);
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes nameSlide{
+  0%{
+    opacity:0;
+    -webkit-transform: translateX(-1.5em);
+  }
+
+  100%{
+    opacity:1;
+    -webkit-transform: translateX(.7em);
+    visibility: visible;
+  }
+}
+
+.product-container:hover .product-detail{
+  animation-name: detailSlide;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  transition-timing-function: ease-in;
+
+  -webkit-animation-name: detailSlide;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-transition-timing-function: ease-in;
+}
+
+@keyframes detailSlide{
+  0%{
+    opacity:0;
+    transform: translateX(1.5em);
+  }
+
+  100%{
+    opacity:1;
+    transform: translateX(.5em);
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes detailSlide{
+  0%{
+    opacity:0;
+    -webkit-transform: translateX(1.5em);
+  }
+
+  100%{
+    opacity:1;
+    -webkit-transform: translateX(0.5em);
+    visibility: visible;
+  }
+}
+.parallax-section{
+  padding: 100px 0 50px;
+}
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+}
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("../images/bag-eight.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.parallax img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, .5);
+  transform: translate3d(0, 0, .5);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.watch-parallax {
+  /*position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;*/
+  background-image: url("../images/watchBG.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
